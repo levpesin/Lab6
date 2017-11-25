@@ -32,19 +32,18 @@ public class FrontCompression {
      * @return the input compressed using front encoding
      */
     public static String compress(final String corpus) {
-        /*
-         * Defend against bad inputs.
-         */
         if (corpus == null) {
             return null;
         } else if (corpus.length() == 0) {
             return "";
         }
-
-        /*
-         * Complete this function.
-         */
-
+        String previous = "";
+        String current = "";
+        String[] word = corpus.split("\r\n|\r\n");
+        String[] wordArray = new String[word.length];
+        for (int line = 0; line < word.length; line++) {
+            if ()
+        }
         return "";
     }
 
@@ -55,18 +54,11 @@ public class FrontCompression {
      * @return the input decompressed using front encoding
      */
     public static String decompress(final String corpus) {
-        /*
-         * Defend against bad inputs.
-         */
         if (corpus == null) {
             return null;
         } else if (corpus.length() == 0) {
             return "";
         }
-
-        /*
-         * Complete this function.
-         */
 
         return "";
     }
